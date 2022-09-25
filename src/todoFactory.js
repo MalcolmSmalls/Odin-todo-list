@@ -1,4 +1,4 @@
-const TodoFactory = (title, description, dueDate, priority, project) => {
+const TodoFactory = (title, description, dueDate, priority, project, status) => {
 
 
 
