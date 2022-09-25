@@ -1,1 +1,1 @@
-alert("wazzzaap");
+(()=>{"use strict";console.log("Make a lot of beats")})();
