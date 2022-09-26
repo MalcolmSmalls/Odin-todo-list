@@ -19,7 +19,13 @@
             <textarea type="text" id="itemDescription" name="itemDescription"></textarea>
             <label for="itemDueDate">Due Date:</label>
             <input type="date" id="itemDueDate" name="itemDueDate">
-            <label for="itemPriority">Importance</label>
+			Importance:
+            <label for="highImportance">High</label>
+			<input type="radio" id="highImportance" name="itemImportance" value="High">
+			<label for="mediumImportance">Medium</label>
+			<input type="radio" id="mediumImportance" name="itemImportance" value="Medium">
+			<label for="littleImportance">Little</label>
+			<input type="radio" id="littleImportance" name="itemImportance" value="Little">
             
             <button class="addTodoItem">Add</button>
         </form>
