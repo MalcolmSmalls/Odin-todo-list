@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("Make a lot of beats")})();
+(()=>{"use strict";const e=[];document.querySelector(".addTodoItem").addEventListener("click",(()=>{const t=document.querySelector("#itemTitle").value,o=document.querySelector("#itemDescription").value,c=document.querySelector("#itemDueDate").value,u=document.querySelector('input[name="itemImportance"]:checked')?.value,r={title:t,description:o,dueDate:c,priority:u,project:"Default"};e.push(r),console.log(e),console.log("works!")}))})();
