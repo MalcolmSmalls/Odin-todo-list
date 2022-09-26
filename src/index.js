@@ -1,4 +1,5 @@
 import { TodoFactory } from "./todoFactory.js"
-import { getTask } from  "./getTask.js"
+import "./getTask.js"
+import { listDOM } from "./DOM.js"
 
-getTask()
+// getTask()
