@@ -1,5 +1,6 @@
 import { listDOM } from "./DOM.js"
 import { TodoFactory } from "./todoFactory.js"
+import { deleteTask } from "./deleteTask.js"
 const defaultProject = []
 
 const getTask = (() => {
@@ -14,6 +15,7 @@ const getTask = (() => {
         console.log(defaultProject)
         console.log('works!')
         listDOM(defaultProject)
+        deleteTask()
     }
     const submitBtn = document.querySelector('.addTodoItem')
     submitBtn.addEventListener('click', storeTask)
@@ -31,3 +33,4 @@ const getTask = (() => {
 })()
 
 // export { getTask }
+export {defaultProject}
