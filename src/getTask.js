@@ -1,7 +1,8 @@
 import { listDOM } from "./DOM.js"
 import { TodoFactory } from "./todoFactory.js"
 import { deleteTask } from "./deleteTask.js"
-const defaultProject = []
+import { defaultProject } from "./defaultProject.js"
+// const defaultProject = []
 
 const getTask = (() => {
     const storeTask = () => {
@@ -14,7 +15,7 @@ const getTask = (() => {
         defaultProject.push(task)
         console.log(defaultProject)
         console.log('works!')
-        listDOM(defaultProject)
+        listDOM()
         deleteTask()
     }
     const submitBtn = document.querySelector('.addTodoItem')
@@ -32,5 +33,5 @@ const getTask = (() => {
 
 })()
 
-// export { getTask }
-export {defaultProject}
+export { getTask }
+// export {defaultProject}

@@ -1,4 +1,5 @@
-const projectList = []
+import { projectList } from './projectPicker.js'
+
 const createProject = (() => {
     const createProj = document.querySelector('#project')
     const projectArea = document.querySelector('.projectSelected')
@@ -26,3 +27,4 @@ const createProject = (() => {
 })()
 
 export { createProject }
+// export { projectList }
