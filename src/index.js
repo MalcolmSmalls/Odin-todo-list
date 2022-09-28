@@ -6,3 +6,4 @@ import { createProject } from "./createProject.js"
 
 listDOM()
 // getTask()
+deleteTask()

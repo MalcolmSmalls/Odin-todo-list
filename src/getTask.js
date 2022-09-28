@@ -15,8 +15,6 @@ const getTask = (() => {
         defaultProject.push(task)
         console.log(defaultProject)
         console.log('works!')
-        listDOM()
-        deleteTask()
     }
     const submitBtn = document.querySelector('.addTodoItem')
     submitBtn.addEventListener('click', storeTask)
