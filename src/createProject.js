@@ -13,7 +13,11 @@ const createProject = (() => {
             if(newProj === ""){
                 return
             }else{
+                const newOption = document.createElement('option')
+                newOption.value = `${newProj}`
+                newOption.textContent = `${newProj}`
                 projectList.push(newProj)
+                document.querySelector('#project').appendChild(newOption)
                 console.log(projectList)
 
             }
