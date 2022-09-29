@@ -2,6 +2,7 @@ import { listDOM } from "./DOM.js"
 import { TodoFactory } from "./todoFactory.js"
 import { deleteTask } from "./deleteTask.js"
 import { defaultProject } from "./defaultProject.js"
+import { currentProj } from "./projectPicker.js"
 // const defaultProject = []
 
 const getTask = (() => {
@@ -10,7 +11,7 @@ const getTask = (() => {
         const taskDescription = document.querySelector('#itemDescription').value
         const taskDueDate = document.querySelector('#itemDueDate').value
         const taskPriority = document.querySelector('input[name="itemImportance"]:checked')?.value
-        const taskProject = "Default"
+        const taskProject = currentProj
         const task = TodoFactory(taskTitle, taskDescription, taskDueDate, taskPriority, taskProject, 'incomplete')
         defaultProject.push(task)
         console.log(defaultProject)
