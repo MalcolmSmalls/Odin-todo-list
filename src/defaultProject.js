@@ -1,5 +1,5 @@
 const defaultProject = [
-    {title: 'what', description: ';kl;l', dueDate: '', priority: undefined, project: 'Default'},
+    {title: 'what', description: ';kl;l', dueDate: '', priority: 'Little', project: 'Default'},
     {title: 'hello', description: ';kl;l', dueDate: '', priority: undefined, project: 'Default'},
     {title: 'anuvva', description: ';kl;l', dueDate: '', priority: undefined, project: 'Default'}]
 

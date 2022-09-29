@@ -2,6 +2,7 @@
 import { defaultProject } from "./defaultProject.js"
 import { deleteTask } from "./deleteTask.js"
 import { listDOM } from "./DOM.js"
+import { editTask } from "./editTask.js"
 
 const otherProj = [
     {title: 'hatttttet', description: ';kl;l', dueDate: '', priority: undefined, project: 'otherPro'},
@@ -27,6 +28,7 @@ projectList.forEach((project,index) => {
         currentProj = projectList[e.target.options.selectedIndex-1]
         listDOM()
         deleteTask()
+        editTask()
     }
     pickProj.addEventListener('change', switchProj)
 

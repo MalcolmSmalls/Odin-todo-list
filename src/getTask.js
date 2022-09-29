@@ -3,6 +3,7 @@ import { TodoFactory } from "./todoFactory.js"
 import { deleteTask } from "./deleteTask.js"
 import { defaultProject } from "./defaultProject.js"
 import { currentProj } from "./projectPicker.js"
+import { editTask } from "./editTask.js"
 // const defaultProject = []
 
 const getTask = (() => {
@@ -17,6 +18,7 @@ const getTask = (() => {
         document.querySelector('.todoList').innerHTML = ""
         listDOM()
         deleteTask()
+        editTask()
 
     }
     const submitBtn = document.querySelector('.addTodoItem')
