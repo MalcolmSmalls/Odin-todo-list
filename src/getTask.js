@@ -13,9 +13,11 @@ const getTask = (() => {
         const taskPriority = document.querySelector('input[name="itemImportance"]:checked')?.value
         const taskProject = currentProj
         const task = TodoFactory(taskTitle, taskDescription, taskDueDate, taskPriority, taskProject, 'incomplete')
-        defaultProject.push(task)
-        console.log(defaultProject)
-        console.log('works!')
+        currentProj.push(task)
+        document.querySelector('.todoList').innerHTML = ""
+        listDOM()
+        deleteTask()
+
     }
     const submitBtn = document.querySelector('.addTodoItem')
     submitBtn.addEventListener('click', storeTask)
