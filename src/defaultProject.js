@@ -4,4 +4,10 @@ const defaultProject = [
     {title: 'anuvva', description: ';kl;l', dueDate: '', priority: undefined, project: 'Default'}]
 
 
+
+const defaultVal = () => {
+    document.querySelector('#project').value = "Default"
+}
+
 export { defaultProject }
+export { defaultVal }
