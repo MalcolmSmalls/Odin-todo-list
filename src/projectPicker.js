@@ -22,8 +22,9 @@ projectList.forEach((project,index) => {
     projectSelector.appendChild(options)
     const pickProj = document.querySelector(`#project`)
     const switchProj = (e) => {
+        document.querySelector('.todoList').innerHTML = ""
         currentProj = projectList[e.target.options.selectedIndex-1]
-        // listDOM()
+        listDOM()
     }
     pickProj.addEventListener('change', switchProj)
 
