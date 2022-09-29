@@ -26,6 +26,10 @@ projectList.forEach((project,index) => {
     const switchProj = (e) => {
         document.querySelector('.todoList').innerHTML = ""
         currentProj = projectList[e.target.options.selectedIndex-1]
+        if(document.querySelector('.edit-Btn')){
+            document.querySelector('.edit-Btn').style.display='none'
+            document.querySelector('.addTodoItem').style.display='inline'            
+        }
         listDOM()
         deleteTask()
         editTask()
