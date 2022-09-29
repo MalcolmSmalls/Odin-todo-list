@@ -1,5 +1,6 @@
 // import { projectList } from "./createProject.js"
 import { defaultProject } from "./defaultProject.js"
+import { deleteTask } from "./deleteTask.js"
 import { listDOM } from "./DOM.js"
 
 const otherProj = [
@@ -25,6 +26,7 @@ projectList.forEach((project,index) => {
         document.querySelector('.todoList').innerHTML = ""
         currentProj = projectList[e.target.options.selectedIndex-1]
         listDOM()
+        deleteTask()
     }
     pickProj.addEventListener('change', switchProj)
 
