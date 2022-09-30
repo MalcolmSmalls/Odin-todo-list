@@ -19,7 +19,9 @@ const editTask = () => {
             }else if(currentProj[dataIndex].priority === "Little"){
                 document.querySelector('#littleImportance').checked = true
             }else{
-                return
+                document.querySelector('#littleImportance').checked = false
+                document.querySelector('#mediumImportance').checked = false
+                document.querySelector('#highImportance').checked = false
             }
             const editBtn = document.createElement('button')
             editBtn.textContent = 'Edit'
